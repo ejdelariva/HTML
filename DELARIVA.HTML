@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/delariva.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body>
+<!-- -- Instruction: Headings ---->
+<h1> This is Headings 1</h1>
+<h1> This is headings 2</h1>
+<h1> This is headings 3</h1>
+<h1> This is headings 4</h1>
+<h1> This is headings 5</h1>
+<h1> This is headings 6</h1>
+
+<!-- Instruction: Text paragraph-->
+ <p>
+    This is paragraph are used to group sewntence and
+    structure to content. they help in making thye text more readable and 
+    organized
+ </p>
+
+<!-- Instruction: Text Formatting -->
+<p><strong>This text is bold.</strong></p>
+<p><em>This text is italicized.</em></p>
+<p><em>This text is underlined.</em></p><em>
+<p><em>This text is highlighted.</em></p><em>
+<p><em>This text is smaller than the surrounding text.<smaller><!--
+    <hr-->
+</smaller></em></p><p><em><em>This text is deleted.</em></em></p><em><em>
+<p><em>This text is inserted.</em></p><em>
+<p><em>This text is subscript.</em></p><em>
+<p><em>This text is superscript.
+
+  <!-- Horizontal Line --> 
+   </em></p><hr><em>
+   
+   <!-- Center elements --> 
+
+
+<!-- Line breaks --> 
+<p></p>
+This the first line.<br>
+This is second line after a line breaks
+<p></p>
+
+<!-- comments --> 
+ <!-- This is a comment for HTML. It will not --> 
+
+ <!-- div -->
+  <div style=" background-color:blue;">
+    <h3>This is a Headings inside a div</h3>
+    <p>
+        This is a paragraph a div. DIV elements are used to group block-level content together.
+    </p>
+    </div>
+
+    <!-- Inline style-->
+      <!-- <p style= color: blue; font-size: 18px"> -->
+   
+   
+    <!-- Margin vs, Padding -->
+    <div style="border: 1px solid red; margin: 20px; padding: 20px"></div>
+     <p>
+        This div has a margin of 20px and padding of 20px. The margin creates 
+        space outside the border, While the padding creates space inside the 
+        border.
+        </p>
+     
+
+
+ <!-- Nested elements-->
+     <div style="border: 1px solid red padding: 10px">
+     Nested Elements Example
+     <p> This is a paragraph inside a div.</p>
+     <div style="border: 1px blue: padding: margin-top: 10px">
+        <h4>Inner Div</h4>
+        <p>This is a paragraph inside the inner div.</p>
+        </div>
+     </div>
+
+    
+
+    
+
+
+    
+    
+
+
+
+
+
+
+   <hr>
+   
+
+
+</em></em></em></em></em></em></em></body></html>
